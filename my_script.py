@@ -19,7 +19,7 @@ person_memory = ConversationBufferMemory(input_key='name',memory_key='chat_histo
 dob_memory = ConversationBufferMemory(input_key='person',memory_key='chat_history')
 descr_memory = ConversationBufferMemory(input_key='dob',memory_key='description_history')
 
-
+ 
 prompt1 = PromptTemplate(
     input_variables=['name'],
     template="Tell me about {name}"
